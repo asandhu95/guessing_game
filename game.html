@@ -1,0 +1,18 @@
+<script>
+var guess, answer, message;
+
+answer = Math.floor(Math.random() * 100 + 1);
+console.log(answer);
+
+
+guess = prompt('Can you guess what my favorite number is?');
+
+if (guess == answer) {
+  message = 'WOW, you\'re brilliant!'
+} else {
+  message = 'Mmm, no. It\'s a toughie.'
+}
+
+alert(message);
+
+</script>
