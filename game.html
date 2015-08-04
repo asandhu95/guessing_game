@@ -1,7 +1,11 @@
 <script>
 var guess, answer, message;
+var run = true;
 
-answer = Math.floor(Math.random() * 100 + 1);
+function numbers() {
+
+
+answer = 22
 console.log(answer);
 
 
@@ -9,10 +13,14 @@ guess = prompt('Can you guess what my favorite number is?');
 
 if (guess == answer) {
   message = 'WOW, you\'re brilliant!'
+  run = false;
 } else {
   message = 'Mmm, no. It\'s a toughie.'
 }
 
 alert(message);
-
+}
+while (run) {
+  numbers();
+}
 </script>
