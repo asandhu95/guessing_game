@@ -1,26 +1,37 @@
 <script>
-var guess, answer, message;
-var run = true;
+	Question = function(answer) {
+			this.answer = answer;
+			
+		  }; 
+			 var num = new Question(22);
+			 var run = true;
 
-function numbers() {
+			     	
+
+			          while (run) {
 
 
-answer = 22
-console.log(answer);
+			          		function game(){
+			 				 getGuess = function(){
+			 				 this.getGuess = prompt('Can you guess what my favorite number is?');
+
+			    		} }
+								   game();
+				    				getGuess();
 
 
-guess = prompt('Can you guess what my favorite number is?');
+				    		var message;
+					 	    
+						 	if(this.getGuess == num.answer){
+						 		message = 'WOW, you\'re brilliant!';
+								run = false;
 
-if (guess == answer) {
-  message = 'WOW, you\'re brilliant!'
-  run = false;
-} else {
-  message = 'Mmm, no. It\'s a toughie.'
-}
+							}
+						 	else {
+								  message = 'Mmm, no. It\'s a toughie.'
+								}
 
-alert(message);
-}
-while (run) {
-  numbers();
-}
-</script>
+								alert(message);
+								}
+			
+ </script>
