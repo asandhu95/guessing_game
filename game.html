@@ -1,37 +1,53 @@
-<script>
-	Question = function(answer) {
-			this.answer = answer;
-			
-		  }; 
-			 var num = new Question(22);
-			 var run = true;
+<DOCTYPE! html>
+	<html>
+			<body>
+				<h1 id = "name"></h1>
+				<p id = "score"></p>
+				<script>
+					Question = function(answer) {
+							this.answer = answer;
+							
+						  }; 
+							 var num = new Question(22);
+							 var run = true;
+							 var score = 0;
+							 var name = prompt('What is your name');
 
-			     	
+							     	
 
-			          while (run) {
+				          while (run) {
+
+				          		 getScore = function(){
+				          		 	document.getElementById("name").innerHTML = name + '\'s Score';
+
+				          			document.getElementById("score").innerHTML = score;
+				          		};
+
+				          		function game(){
+				 				 getGuess = function(){
+				 				 this.getGuess = prompt('Can you guess what my favorite number is?');
+
+				    		} }
+				    				getScore();
+									game();
+					    			getGuess();
 
 
-			          		function game(){
-			 				 getGuess = function(){
-			 				 this.getGuess = prompt('Can you guess what my favorite number is?');
-
-			    		} }
-								   game();
-				    				getGuess();
-
-
-				    		var message;
-					 	    
-						 	if(this.getGuess == num.answer){
-						 		message = 'WOW, you\'re brilliant!';
-								run = false;
-
-							}
-						 	else {
-								  message = 'Mmm, no. It\'s a toughie.'
+					    		var message;
+						 	    
+							 	if(this.getGuess == num.answer){
+							 		message = 'WOW, you\'re brilliant!';
+									run = false;
+									++(score)
+									document.getElementById("score").innerHTML = score;
 								}
+							 	else {
+									  message = 'Mmm, no. It\'s a toughie.'
+									}
 
-								alert(message);
-								}
-			
- </script>
+									alert(message);
+									}
+					
+				 </script>
+			</body>
+	 </html>
